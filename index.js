@@ -1,12 +1,27 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
+const VotingAge =20;
 
-
+if(VotingAge >=18){
+    console.log(true);
+}else{
+    console.log(false);
+}
 
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
+
+var xbox = "good";
+var playstation = "bad";
+
+if(playstation === "bad"){
+    xbox = "works";
+}else{
+    xbox = "doesn't work";
+}
+console.log(xbox);
 
 
 
@@ -14,20 +29,30 @@
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
 
-
+var a="1999";{
+    console.log(parseInt(a));
+}
 
 
 //Task d: Write a function to multiply a*b 
 
-
-
+function multiply (a,b){
+    console.log(a*b);  
+    
+  }
+  multiply(4,5);
 
 
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
-
-
+function dogyears(age){
+    var dog =7*age;
+    console.log(dog)
+}
+dogyears(1);
+dogyears(5);
+  
 
 
 
@@ -48,6 +73,26 @@
 // 7 - 12 months 4% of their body weight
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
+function hungryDog(weight, age) {
+    if(age >= 1 && weight <= 5) {
+      return weight * 0.05
+    }else if(age >= 1 && weight <= 6 && weight <= 10) {
+      return weight * 0.04
+    }else if(age >= 1 && weight <= 6 && weight <= 10) {
+      return weight * 0.04
+    }else if(age >= 1 && weight <= 6 && weight <= 10) {
+      return weight * 0.04
+    }else if(age < .75 && age >= 0.583) {
+      return weight * 0.05
+    }else if(age < .5 && age >= 0.333) {
+      return weight * 0.05
+    }else if(age < .33 && age >= 0.333) {
+      return weight * 0.05
+    }
+    
+  }
+  
+  hungryDog(10, .05);
   
 
 
@@ -60,7 +105,7 @@
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
-  
+      
   
 
 /************************************************************** Task 5 **************************************************************/
